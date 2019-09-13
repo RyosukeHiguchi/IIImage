@@ -33,3 +33,19 @@ p.white {
     width: auto;
     text-align: center;/*一応BOX内の文字も中央寄せ*/
   }
+
+  .navbar {
+      background-color: black;
+  }
+
+  .nwhite {
+      color: white;
+      &:hover {
+          color: white;
+      }
+  }
+
+  .bold {
+      font-weight: bold;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  }
