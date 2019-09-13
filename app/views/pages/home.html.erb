@@ -1,1 +1,14 @@
-<h2>Today's Tshirt</h2>
+ <div class="bg-image">
+    <div class="py-10 lg:py-20 px-4 border-b border-grey-light mb-4 text-indigo-darker">
+        <div class="container m-auto text-center center1">
+            <p class="white">今日着るTシャツを決めよう!</p>
+
+            <% unless user_signed_in? %>
+            <%= link_to "始める", new_user_registration_path, class:"btn btn-danger  btn-lg my-3" %>
+            <% else %>
+            <%= link_to "Schedule a new session", root_path, class:"btn btn-primary my-3" %>
+            <% end %>
+        </div>
+    </div>
+
+</div>
