@@ -1,3 +1,11 @@
 <h2><%= @user.full_name %></h2>
+<% if @images.present? %>
+    <%= render 'shared/images', images: @images %>
+<% else %>
+    <h2>Tシャツを追加して今日のTシャツを決めよう!!</h2> 
 
-<%= render 'shared/images', images: @images %>
+        <div class="con">
+            <span><%= link_to 'Tシャツを追加する', upload_path, class: 'btn-gradient-radius'  %></span>
+        </div>
+
+<% end %>
