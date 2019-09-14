@@ -73,6 +73,7 @@ gem 'kaminari'
 gem 'carrierwave'
 gem 'mini_magick' #画像リサイズ用のgem
 gem 'fog'
+gem 'active_storage_drag_and_drop'
 
 # フォーム
 gem 'bootstrap_form'
