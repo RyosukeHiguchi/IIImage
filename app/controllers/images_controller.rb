@@ -1,6 +1,6 @@
 class ImagesController < ApplicationController
     def show
-        @image = Image.find_by(params[:id])
+        @image = Image.find(params[:id])
     end
 
     def new
