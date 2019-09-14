@@ -4,9 +4,9 @@
             <p class="white">今日着るTシャツを決めよう!</p>
 
             <% unless user_signed_in? %>
-            <%= link_to "始める", new_user_registration_path, class:"btn btn-danger  btn-lg my-3" %>
+            <%= link_to "始める", new_user_registration_path, class:"my-3 btn btn-sm animated-button victoria-one" %>
             <% else %>
-            <%= link_to "Tシャツを決める", root_path, class:"btn btn-danger btn-lg my-3" %>
+            <%= link_to "Tシャツを決める", root_path, class:"my-3 btn btn-sm animated-button victoria-three" %>
             <% end %>
         </div>
     </div>
